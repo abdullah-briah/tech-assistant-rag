@@ -1,8 +1,8 @@
-# 🤖 Teknik Asistanım
+# 🤖 Teknik Asistan
 
-RAG (Retrieval-Augmented Generation) mimarisiyle geliştirilmiş, teknik konularda Türkçe yanıt veren bir yapay zeka asistanıdır. Bu proje, Akbank GenAI Bootcamp kapsamında hazırlanmıştır.
+RAG (Retrieval-Augmented Generation) mimarisiyle geliştirilmiş, teknik ve yapay zeka konularında Türkçe yanıt veren bir yapay zeka asistanıdır.
 
-[**Web Uygulamasına Erişin →**](https://your-streamlit-app-url.streamlit.app)
+[**Web Uygulamasına Erişin →**](https://tech-assistant-rag-gfcxf9ydnkrptkdrxuuvyv.streamlit.app/)
 
 ---
 
@@ -14,16 +14,22 @@ Bu projenin temel amacı, kullanıcıların **yapay zeka, veri bilimi, makine ö
 
 ## 2. Veri Seti Hakkında Bilgi
 
-Proje, **tamamen elle hazırlanmış** 62 adet teknik soru-cevap çiftinden oluşan bir veri seti kullanmaktadır. Veri seti aşağıdaki alanları kapsamaktadır:
+Proje, **yaklaşık 90 adet teknik soru-cevap çiftinden** oluşan bir veri seti kullanmaktadır. Bu veri seti şu şekilde hazırlanmıştır:
 
-- Yapay Zeka (YZ) ve Etik  
-- Makine Öğrenimi (Denetimli, Denetimsiz, Pekiştirmeli)  
-- Derin Öğrenme ve Sinir Ağları  
-- Veri Bilimi ve Veri Madenciliği  
-- Geliştirici Araçları (Docker, Git, API, vs.)  
-- Büyük Dil Modelleri (LLM) ve RAG  
+- **Kaynaklar**: StackExchange (AI, Data Science), teknik dokümantasyonlar, akademik makaleler ve güvenilir çevrimiçi kaynaklar.
+- **Hazırlama Yöntemi**: 
+  - İlk olarak, bu kaynaklardan temel kavramlar ve sık sorulan sorular belirlendi.
+  - Ardından, büyük dil modelleri (LLM) kullanılarak bu kavramlar **Türkçe’ye uyarlanmış**, net ve teknik olarak doğru soru-cevap çiftleri üretildi.
+  - Son olarak, tüm içerikler **elle gözden geçirilerek** doğrulandı ve projeye entegre edildi.
+- **Kapsam**: 
+  - Yapay Zeka (YZ) ve Etik  
+  - Makine Öğrenimi (Denetimli, Denetimsiz, Pekiştirmeli)  
+  - Derin Öğrenme ve Sinir Ağları  
+  - Veri Bilimi ve Veri Madenciliği  
+  - Geliştirici Araçları (Docker, Git, API, vs.)  
+  - Büyük Dil Modelleri (LLM) ve RAG  
 
-Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kontrol edilmiştir. Veri seti, projenin kaynak kodunun bir parçası olarak `src/data.py` dosyasında yer almaktadır. Harici bir veri seti kullanılmamıştır.
+Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kontrol edilmiştir. Veri seti, projenin kaynak kodunun bir parçası olarak `src/data.py` dosyasında yer almaktadır.
 
 ---
 
@@ -34,7 +40,7 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 - **Embedding Modeli**: `models/text-embedding-004` (Google)  
 - **Vektör Veritabanı**: Chroma (bellek içi)  
 - **RAG Çerçevesi**: LangChain  
-- **Web Arayüzü**: Streamlit  
+- **Web Arayüzü**: Streamlit + Özel CSS (`styles.css`)  
 - **API Yönetimi**: `google-generativeai` kütüphanesi  
 
 ### RAG Mimarisi
@@ -47,7 +53,8 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 ### Diğer Optimizasyonlar
 - `temperature=0.3` → teknik doğruluk için düşük rastgelelik  
 - Özel prompt şablonu → "Bilmiyorum." yanıtı sadece gerekliyse  
-- Sosyal mesajlar için akıllı ön işlem (`Merhaba`, `Teşekkürler`)  
+- Sosyal mesajlar için akıllı ön işlem (`Merhaba`, `Teşekkürler`, `Seni kim yaptı?`)  
+- Modern CSS ile zengin kullanıcı arayüzü (gradient arka plan, cam efekti, animasyonlu butonlar)
 
 ---
 
@@ -57,8 +64,9 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 - **Dil Tutarlılığı**: Tüm yanıtlar **Türkçe** ve teknik olarak anlaşılırdır.  
 - **Kullanıcı Deneyimi**:  
   - İlk açılışta alan seçimi ile rehberlik  
-  - Sosyal etkileşim desteği  
+  - Sosyal etkileşim desteği (`Merhaba`, `Teşekkürler`, `Seni kim yaptı?`)  
   - Hızlı ve akıcı yanıt süresi  
+  - **Modern arayüz**: Gradient arka plan, cam efekti (glassmorphism), animasyonlu butonlar  
 - **Performans**: RAG zinciri bir kez başlatılır (`@st.cache_resource`), tekrar tekrar yüklenmez.
 
 ---
@@ -66,7 +74,7 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 ## 5. Web Arayüzü & Product Kılavuzu
 
 ### Nasıl Kullanılır?
-1. Uygulamayı açın: [https://your-streamlit-app-url.streamlit.app](https://your-streamlit-app-url.streamlit.app)
+1. Uygulamayı açın: [https://your-streamlit-app-url.streamlit.app](https://tech-assistant-rag-gfcxf9ydnkrptkdrxuuvyv.streamlit.app/)  
 2. **İlk ziyaretinizde**, modern ve etkileyici bir arayüzle karşılaşacaksınız:
    - Mor-mavi gradient arka plan
    - Cam efekti (glassmorphism) ile mesaj kutuları
@@ -76,11 +84,11 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 5. Asistan, teknik olarak doğru ve Türkçe bir yanıtla size yardımcı olacak.
 
 ### Özellikler
-- 🎨 **Modern UI**: Gradient arka plan, cam efekti, animasyonlu butonlar
+- 🎨 **Modern UI**: Özel `styles.css` dosyası ile tasarlandı  
 - 🤖 **Akıllı Etkileşim**: 
   - Alan bazlı rehberlik
   - Sosyal mesaj desteği (`Merhaba`, `Teşekkürler`)
-  - Evet/Hayır yanıtlarına özel mesajlar
+  - Kişisel sorulara özel yanıt (`Seni kim yaptı?`)
 - ⚡ **Hızlı Performans**: RAG motoru önbelleğe alınmıştır
 - 🔒 **Güvenli Bilgi**: Tüm yanıtlar doğrulanmış veri setine dayanır
 
@@ -92,7 +100,7 @@ Tüm içerikler **Türkçe** olarak hazırlanmış ve teknik doğrulukları kont
 
 ```bash
 # 1. Ortamı klonlayın
-git clone https://github.com/username/tech-assistant-rag.git
+git clone https://github.com/abdullah-briah/tech-assistant-rag.git
 cd tech-assistant-rag
 
 # 2. Sanal ortam oluşturun
