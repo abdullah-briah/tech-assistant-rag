@@ -4,7 +4,7 @@ RAG (Retrieval-Augmented Generation) mimarisiyle geliştirilmiş, teknik ve yapa
 
 [**Web Uygulamasına Erişin →**](https://tech-assistant-rag-gfcxf9ydnkrptkdrxuuvyv.streamlit.app/)
 
-🎥 https://youtu.be/cNN8yXK-AWA
+🎥 [https://youtu.be/cNN8yXK-AWA](https://youtu.be/cNN8yXK-AWA)
 
 ---
 
