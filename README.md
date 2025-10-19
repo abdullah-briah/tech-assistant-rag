@@ -3,6 +3,7 @@
 RAG (Retrieval-Augmented Generation) mimarisiyle geliştirilmiş, teknik ve yapay zeka konularında Türkçe yanıt veren bir yapay zeka asistanıdır.
 
 [**Web Uygulamasına Erişin →**](https://tech-assistant-rag-gfcxf9ydnkrptkdrxuuvyv.streamlit.app/)
+🎥 [Demo Video](demo.mp4)
 
 ---
 
