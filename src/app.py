@@ -59,7 +59,7 @@ def display_welcome_buttons():
     st.markdown("### 🧠 Bugün hangi konuda konuşalım?")
     col1, col2 = st.columns(2)
 
-    # Topics (مختصر وواضح)
+    # Topics
     col1_topics = [
         ("🤖 Yapay Zeka (YZ)", "YZ ile ilgili sorularınızı cevaplamak için hazırım. 💡"),
         ("📊 Veri Bilimi", "Veri Bilimi ile ilgili sorularınızı yanıtlayabilirim. 💡"),

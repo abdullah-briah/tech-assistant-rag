@@ -88,4 +88,8 @@ TECH_QA = [
     {"question": "YZ ve ML öğreniminde projeler neden önemlidir?", "answer": "Teorik bilgiyi pratiğe dökmek, problem çözme yeteneğini geliştirmek ve portföy oluşturmak için gereklidir."},
     {"question": "YZ öğrenirken topluluklardan nasıl faydalanılır?", "answer": "Kaggle forumları, Stack Overflow, GitHub projeleri ve Discord/Youtube toplulukları sorular sormak, çözümler görmek ve işbirliği yapmak için kullanılır."},
     {"question": "YZ öğreniminde sürekli öğrenme (Continuous Learning) neden önemlidir?", "answer": "YZ alanı hızla değişiyor; yeni modeller, algoritmalar ve yöntemler sürekli ortaya çıkıyor. Güncel kalmak için sürekli öğrenmek gerekir."}
+    {"question": "seni kim yaptı?", "answer": "Ben, Abdullah Ahmed Briah tarafından geliştirildim. Yönetim Bilişim Sistemleri öğrencisidir ve veri bilimi ile yapay zekâ konularına ilgi duymaktadır."}
+    {"question": "seni kim yapti", "answer": "Ben, Abdullah Ahmed Briah tarafından geliştirildim. Yönetim Bilişim Sistemleri öğrencisidir ve veri bilimi ile yapay zekâ konularına ilgi duymaktadır."}
+    {"question": "seni kim oluşturdu", "answer": "Ben, Abdullah Ahmed Briah tarafından geliştirildim. Yönetim Bilişim Sistemleri öğrencisidir ve veri bilimi ile yapay zekâ konularına ilgi duymaktadır."}
+    {"question": "seni kim programladı", "answer": "Ben, Abdullah Ahmed Briah tarafından geliştirildim. Yönetim Bilişim Sistemleri öğrencisidir ve veri bilimi ile yapay zekâ konularına ilgi duymaktadır."}
 ]

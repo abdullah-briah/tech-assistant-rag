@@ -10,7 +10,7 @@ RAG Engine for Technical Assistant.
 import os
 from typing import List, Dict, Optional
 from dotenv import load_dotenv
-from data import TECH_QA  # Dataset is stored in a separate file (clean code principle)
+from data import TECH_QA  # Dataset is stored in a separate file 
 
 # Required libraries: Google GenAI and LangChain components
 import google.generativeai as genai
@@ -21,7 +21,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-# Load environment variables from .env file (optional but recommended)
+# Load environment variables from .env file
 load_dotenv()
 
 # =============== CONFIGURATION ===============
@@ -82,7 +82,7 @@ class TechnicalAssistantRAG:
         # Convert dataset to Document format
         docs = self._prepare_documents()
 
-        # Create in-memory Chroma vectorstore (persistent storage not required)
+        # Create in-memory Chroma vectorstore 
         self.vectorstore = Chroma.from_documents(
             documents=docs,
             embedding=embedding_model
